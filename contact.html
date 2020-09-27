@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <header>    
+        <div id="myNavBar" class="navbar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact Me</a>
+        </div>  
+    </header>
+    <body>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div class="contactForm">
+            <form method="POST" action="mailto:b00074249@aus.edu">
+                <label for="fName"> First Name: </label>
+                <input type="text" id="firstName" name="fName" placeholder="Your First Name" required> <br> <br>
+                <label for="lName"> Last Name: </label>
+                <input type="text" id="lastName" name="lName" placeholder="Your Last Name" required> <br> <br>
+                <label for="message"> Message:</label> <br>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter Message" required></textarea> <br> <br>
+                <input type="submit" value="Send">
+            </form>      
+        </div>
+        <footer>
+            <p> © Ramy Gendy </p>
+        </footer>
+        <script>
+            function openNav() {
+              document.getElementById("myNavBar").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNavBar").style.width = "0";
+            }
+        </script>
+    </body>
+</html>
