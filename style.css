@@ -88,7 +88,7 @@ input[type=submit] {
 }
 
 textarea {
-  width: 80%;
+  width: 90%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -100,7 +100,7 @@ textarea {
 
 .contactForm {
   margin-left: 50px;
-  width: 50%;
+  width: 40%;
   padding: 20px;
   background-color: whitesmoke;
   box-shadow: 10px 10px 5px grey;
