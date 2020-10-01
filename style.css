@@ -3,43 +3,28 @@ html {
 }
 
 .navbar {   
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
   background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+  border-radius: 30px;
+  margin-bottom: 30px;
 }
   
 /* Links inside the navbar */
 .navbar a {
-  padding: 8px 8px 30px 32px;
+  padding: 8px 8px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
-  display: block;
-  transition: 0.3s; 
+  transition: 0.2s; 
 }
 
-/* Add a turquoise background color to navbar links on hover */
 .navbar a:hover {
   color: #f1f1f1;
 }
 
-.navbar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
 body {
-  transition: margin-left .5s;
   padding: 20px;
   background-image: url('sebastien-gabriel--IMlv9Jlb24-unsplash.jpg');
 }
