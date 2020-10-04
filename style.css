@@ -30,6 +30,11 @@ html {
 .navbar a:active {
   background-color: white;
 }
+.video {
+  display: flex;
+  justify-content: center;
+}
+
 p {
   margin-left: 20px;
   margin-right: 10px;
@@ -158,6 +163,11 @@ color: white;
 
 .fa-linkedin {
   background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: #6afad8;
   color: white;
 }
 
