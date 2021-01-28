@@ -1,28 +1,314 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home Page</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <header>    
-        <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="experience.html">My Skills</a>
-            <a href="contact.html">Contact Me</a>
-        </div>  
-    </header>
-    <body>
-        <div class="video">
-        <video width="100%" height="80%" controls>
-            <source src="RamyVideo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="style.css" rel="stylesheet">
+  <title> Personal Resume </title>
+</head>
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav mx-auto" style="justify-content: center;">
+        <a class="nav-item nav-link active fs-4" href="#about"> About <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link active fs-4" href="#experience"> Experience </a>
+        <a class="nav-item nav-link active fs-4" href="#education">Education </a>
+        <a class="nav-item nav-link active fs-4" href="#projects">Project</a>
+        <a class="nav-item nav-link active fs-4" href="#skills">Skills</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body class="animate__animated animate__fadeIn">
+  <div class="bg p-5 pt-5 mt-5" data-aos="ease-in">
+    <p class="text-center text-uppercase fs-5" style="color: white;">
+      Ramy Gendy
+    </p>
+    <p class="text-center fs-5 font-monospace" style="color: white;">
+      Professional Software/Web Developer
+    </p>
+  </div>
+
+  <div id="about" class="pt-4 mt-4">
+    <div class="container py-5 px-5 ">
+      <h1 class="text-center"> About Me </h2>
+        <br>
+        <p class="fs-4">
+          My name is Ramy Gendy, and I am currently a Computer Science student in American University of Sharjah.
+          I am from Egypt and I have been living in the UAE for 16 years.
+          My hobbies are swimming, basketball, and video games.
+          I code for fun in my free time and I tend to have a side project to relax from work.
+          My plan for the future is to get a software development job somewhere in Europe and to settle down there.
+        </p>
+    </div>
+  </div>
+
+  <div id="experience" class="pt-4 mt-4">
+    <div data-aos="fade-up" class="container py-5 px-5 pb-4 mb-4">
+      <h1 class="text-center"> Work Experience </h2>
+        <br>
+        <div class="row">
+          <div class="col-3 pt-5 mt-5">
+            <img src="aswan-logo.png">
+          </div>
+          <div class="col">
+            <p class="fs-4">
+              <strong> Company name: </strong>
+              Aswan International Engineering
+            </p>
+            <p class="fs-4">
+              <strong> Position: </strong>
+              Intern
+            </p>
+            <p class="fs-4">
+              <strong> Duration: </strong>
+              27th July 2020 - 30 August 2020
+            </p>
+            <p class="fs-4">
+              <strong> Tasks and projects: </strong>
+            </p>
+            <ul>
+              <li class="fs-4">
+                An employee notification mobile appication using Xamarin and utilizing Firebase. Majority of my time at
+                the
+                internship was focused
+                on this project.
+              </li>
+              <li class="fs-4">
+                An email service that runs in the background to send emails to employees at certain intervals.
+              </li>
+              <li class="fs-4">
+                A simple library that uses a database-first approach to read and write to SQL databases.
+              </li>
+            </ul>
+          </div>
         </div>
-        <footer>
-            <p> © Ramy Gendy </p>
-        </footer>
-    </body>
+    </div>
+  </div>
+
+  <div id="education" class="pt-4 mt-4">
+    <div data-aos="fade-down" class="container py-5 px-5 pb-5 mb-5">
+      <h1 class="text-center"> Education </h2>
+        <br>
+        <div class="row">
+          <div class="col-3 pt-3 mt-3">
+            <img src="rsz_1american_university_of_sharjah_emblem.png">
+          </div>
+          <div class="col pt-4 mt-4">
+            <p class="fs-4">
+              <strong> Institution Name: </strong>
+              American University of Sharjah
+            </p>
+            <p class="fs-4">
+              <strong> Duration: </strong>
+              August 2017 - Present
+            </p>
+            <p class="fs-4">
+              <strong> Degree: </strong>
+              Bachelor Of Science in Computer Science +
+              Minor in Data Science
+            </p>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-3 pt-3 mt-3">
+            <img src="download.png">
+          </div>
+          <div class="col pt-4 mt-4">
+            <p class="fs-4">
+              <strong> Institution Name: </strong>
+              International Community School
+            </p>
+            <p class="fs-4">
+              <strong> Duration: </strong>
+              August 2010 - June 2016
+            </p>
+            <p class="fs-4">
+              <strong> Degree: </strong>
+              High School Diploma
+            </p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container pt-5 mt-5" id="projects">
+    <div class="container pt-3 mt-3" data-aos="fade-left">
+      <div class="container pb-5 mb-5">
+
+        <h1 class="text-center">Projects</h2>
+          <br>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <!-- Your controls -->
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <!-- Your slides -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="https://github.com/CMP354-Project/Corona-Tracker"><img class="d-block w-100"
+                    src="coronavirus-mobile-appk.jpg" alt="First slide"> </a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3> Coronavirus Notification Mobile App </h5>
+                    <p class="fs-4"> It helps user know when to get tested. Technologies: Java Android, Firebase (Click
+                      on
+                      the
+                      image to go the github link.) </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="employee.jpg">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3> Employee Notification Mobile App </h5>
+                    <p class="fs-4"> Made for Aswan International Engineering during my internship. Allows supervisors
+                      and
+                      employees to communicate remotely with a simple button click. Technologies: Xamarin,
+                      Firebase </p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pt-3 mt-3" id="skills">
+    <div class="container pb-5 mb-5" data-aos="fade-right">
+      <h1 class="text-center"> Technical Skills </h2>
+        <div class="row">
+          <br>
+          <div class="col pt-3 mt-3">
+            <h3>
+              Programming Languages
+            </h3>
+            <br>
+            <ul>
+              <li class="fs-4">
+                Python
+              </li>
+              <li class="fs-4">
+                C++
+              </li>
+              <li class="fs-4">
+                Javascript
+              </li>
+              <li class="fs-4">
+                Java
+              </li>
+              <li class="fs-4">
+                Java Android
+              </li>
+              <li class="fs-4">
+                Xamarin
+              </li>
+              <li class="fs-4">
+                Kotlin
+              </li>
+            </ul>
+          </div>
+          <br>
+          <div class="col pt-3 mt-3">
+            <h3>
+              Web Technologies
+            </h3>
+            <br>
+            <ul>
+              <li class="fs-4">
+                HTML5
+              </li>
+              <li class="fs-4">
+                CSS
+              </li>
+              <li class="fs-4">
+                JQuery
+              </li>
+              <li class="fs-4">
+                Flask
+              </li>
+              <li class="fs-4">
+                Express
+              </li>
+              <li class="fs-4">
+                MQTT
+              </li>
+            </ul>
+          </div>
+          <br>
+          <div class="col pt-3 mt-3">
+            <h3>
+              Other Technologies
+            </h3>
+            <br>
+            <ul>
+              <li class="fs-4">
+                Artificial Intelligence
+              </li>
+              <li class="fs-4">
+                Machine Learning with Python
+              </li>
+              <li class="fs-4">
+                SQL
+              </li>
+              <li class="fs-4">
+                Webots
+              </li>
+              <li class="fs-4">
+                Git
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+  <footer class="bg-light fixed-bottom text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © Ramy Gendy
+    </div>
+  </footer>
+
+  <script>
+    $(document).ready(function () {
+      $('.carousel').carousel({
+        interval: 550 * 10
+      });
+      console.log("Print");
+    });
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
